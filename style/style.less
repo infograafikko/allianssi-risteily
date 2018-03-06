@@ -1,0 +1,276 @@
+@import url("https://fonts.googleapis.com/css?family=Homenaje");
+@import url("https://fonts.googleapis.com/css?family=Merriweather+Sans:300,400");
+
+.mesaatio-kuinka_monta_suomessa {
+    
+     h1 {
+        font-family: 'Homenaje', sans-serif;
+        color: #333333;
+        padding-left: 40px;
+        padding-top: 5px;
+    }
+
+    h2 {
+        font-family: 'Homenaje', sans-serif;
+        color: #333333;
+        padding-left: 40px;
+        text-decoration: underline;
+    }
+
+    p {
+        max-width: 620px;
+        font-family: 'Merriweather Sans', sans-serif;
+        font-weight: lighter;
+        padding-left: 40px;
+    }
+
+    label {
+        max-width: 620px;
+        font-family: 'Merriweather Sans', sans-serif;
+        font-weight: lighter;
+    }
+
+    .invisible {
+        display: none;
+    }
+
+    .email {
+        padding-left: 40px;
+    }
+
+    input {
+        margin-top: 20px;
+    }
+
+
+    #submitPoints {
+        font-family: 'Merriweather Sans', sans-serif;
+        background-color:#1c438c;
+        display:inline-block;
+        cursor:pointer;
+        color:#ffffff;
+        font-size:17px;
+        margin-top: 20px;
+        padding:16px 31px;
+        text-decoration:none;
+    }
+    #submitPoints:hover {
+        background-color:#005fb8;
+    }
+    #submitPoints:active {
+        position:relative;
+        top:1px;
+    }
+
+
+    /* unvisited link */
+    a:link {
+        color: #1C438C;
+    }
+
+    /* visited link */
+    a:visited {
+        color: #1C438C;
+    }
+
+    .ticks {
+        font: 10px sans-serif;
+    }
+
+    .track,
+    .track-inset,
+    .track-overlay{
+        stroke-linecap: round;
+    }
+
+    .track {
+        stroke: #000;
+        stroke-opacity: 0.3;
+        stroke-width: 10px;
+    }
+
+    .track-inset {
+        stroke: #ddd;
+        stroke-width: 8px;
+    }
+
+    .track-overlay{
+        pointer-events: stroke;
+        stroke-linecap: round;
+        stroke-width: 50px;
+        stroke: black; /*<-- give it a stroke */
+        opacity: 0; /*<-- but don't show it */
+    }
+
+    .handle {
+        fill: #1C438C;
+        stroke: #000;
+        stroke-opacity: 0.5;
+        stroke-width: 1.25px;
+    }
+
+    .circleRight {
+        fill: #E67338;
+        stroke: #000;
+        stroke-opacity: 0.5;
+        stroke-width: 1.25px;
+
+    }
+    .bar rect {
+        fill: lightgray;
+    }
+
+    .bar text {
+        fill: #000;
+        font: 10px sans-serif;
+    }
+
+    .axisy line {
+        stroke: lightgray;
+        stroke-width: 1px;
+        stroke-dasharray: 3,3;
+    }
+
+    .axisy path {
+        display: none;
+    }
+
+    .iAmLegend text {
+        font-family: "Merriweather Sans", sans-serif;
+    }
+
+    .axisy text {
+        font-family: "Merriweather Sans", sans-serif;
+        font-size: 11px;
+        font-weight: lighter;
+    }
+
+    .axisx text {
+        font-family: "Merriweather Sans", sans-serif;
+        font-size: 11px;
+        font-weight: lighter;
+    }
+
+    .button:hover {
+        fill:  #005fb8;
+    }
+
+    .iconPlain  {
+        fill:lightgray;
+    }
+
+    .iconSelected  {
+        fill: #E67338;
+    }
+
+    .signature {
+        max-width: 640px;
+        background-color: #262626;
+        padding-top: 1px;
+        padding-bottom: 1px;
+        margin-left: 30px;
+    }
+
+    .signature p {
+        text-align: left;
+        font-family: 'Merriweather Sans', sans-serif;
+        font-weight: bold;
+        font-size: 16px;
+        padding-left: 10px;
+        color: white;
+    }
+
+    .signature a:link {
+        color: white;
+    }
+
+    /* visited link */
+    .signature a:visited {
+        color: white;
+    }
+
+    .wrapper {
+        max-width: 640px;
+        margin-left: 30px;
+        margin-top: -10px;
+        padding-bottom: 1px;
+        padding-top: 1px;
+        background-color: #F1F1F1;
+    }
+
+    .wrapper p{
+        padding-left: 10px;
+        text-align: left;
+    }
+
+    .wrapper h1{
+        padding-left: 5px;
+        text-align: center;
+    }
+
+    .wrapper-end {
+        max-width: 640px;
+        margin-left: 30px;
+        margin-top: 10px;
+        padding-bottom: 1px;
+        padding-top: 1px;
+        background-color: #F1F1F1;
+    }
+
+    .wrapper-end p{
+        padding-left: 10px;
+        text-align: left;
+    }
+
+    .img-wrapper  {
+        position: relative;
+        margin-left: 30px;
+        max-width: 100%;
+    }
+
+    .img-wrapper h1 {
+        position: absolute;
+        padding-left: 35px;
+        top: 220px;
+        width: 605px;
+        background: rgb(0, 0, 0); /* fallback color */
+        background: rgba(0, 0, 0, 0.7);
+        color: white;
+        font-size: 40px;
+    }
+
+    .images {
+        width: 150px;
+        height: 100%;
+        vertical-align: middle;
+    }
+
+
+    .unselectable {
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        cursor: default;
+    }
+
+    .share {
+        background-color: #1C438C;
+        color: white;
+        margin-left: 30px;
+        width: 170px;
+        padding: 5px 5px 5px 5px;
+        margin-bottom: 5px;
+        border-width: 1px;
+    }
+
+    .share:hover {
+        fill:  #005fb8;
+    }
+
+    .sharepic {
+        margin-left: 40px;
+    }
+}

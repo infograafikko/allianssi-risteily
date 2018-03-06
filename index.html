@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<head>
+  <title>Sadan nuoren Suomi - Suomi 100 vuotta</title>
+  <meta property="og:title" content="Sadan nuoren Suomi"/>
+  <meta property="og:description" content="Jos suomalaiset nuoret tiivistettäisiin sadan ihmisen populaatioon, millainen väestö se olisi? Testaa tietosi ja näe, minkätasoinen tietäjä olet."/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content="https://infograafikko.github.io/me-saatio-sadan-nuoren-suomi/" />
+  <meta property="og:image" content="https://infograafikko.github.io/me-saatio-sadan-nuoren-suomi/img/kansikuvatytto.jpg"/>
+  <meta property="og:site_name" content="Sadan nuoren Suomi"/>
+  <meta property="fb:app_id" content="103403023614377"/>
+	<meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=0.5">
+  <link rel="stylesheet" href="style/style.css">
+  <link rel="stylesheet/less" type="text/css" href="style/style.less" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/less.js/2.7.2/less.min.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/3.6.4/firebase.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.4.0/d3.min.js"></script>
+	<script src="scripts/quiz.js"></script>
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+</head>
+<body>
+  <figure class="mesaatio-kuinka_monta_suomessa">
+    <div class="img-wrapper">
+    <img src="img/kansikuvatytto.jpg">
+    <h1>MITEN HYVIN TUNNET NUORET? <br /><text style="font-weight: normal;">Jos Suomessa asuisi sata nuorta</text></h1>
+    </div>
+    <div class="wrapper">
+    <p style="font-size: 18px;"><strong>Jos suomalaiset nuoret tiivistettäisiin sadan ihmisen populaatioon, millainen väestö se olisi?</strong> Kuinka monella on ystäviä? Kuinka monella ei ole tutkintoa? Entä, millainen on heidän mielenterveytensä?</p>
+    </div>
+    
+    <div class="me1">
+      <h1>Jos Suomen nuoret tiivistetään sataan ihmiseen...</h1>
+      <h2>1. Työllisyys</h2>
+      <p>Jos parikymppiset (20-29v) tiivistetään sataan henkeen, kuinka moni heistä on töissä?</p>
+      <svg class = "me1" width="700" height="450"></svg>
+      <script type="text/javascript">
+        callEverything("me1", 60, "Sadan nuoren Suomessa on ", " parikymppistä työllistä.", "Suomessa on noin 410 000 parikymppistä", "töissä, eli ", " henkilöä sadan nuoren Suomessa.", "http://www.stat.fi/til/tyokay/index.html", 1, 30, 55,  40,"M 25.5 2 C 22.467 2 20 4.467 20 7.5 C 20 10.533 22.467 13 25.5 13 C 28.533 13 31 10.533 31 7.5 C 31 4.467 28.533 2 25.5 2 z M 20.5 14 C 17.467 14 15 16.467 15 19.5 L 15 32 C 15 33.104 15.897 34 17 34 C 18.103 34 19 33.104 19 32 L 19 22.46875 C 19 22.19775 19.229 21.96875 19.5 21.96875 C 19.771 21.96875 20 22.19775 20 22.46875 L 20 45.3125 C 20 46.8765 20.84125 48 22.40625 48 C 23.88825 48 25 46.8515 25 45.3125 L 25 32.46875 C 25 32.19275 25.224 31.96875 25.5 31.96875 C 25.776 31.96875 26 32.19275 26 32.46875 L 26 45.59375 C 26.004 45.59975 26.02725 45.58775 26.03125 45.59375 C 26.16825 46.97675 27.21175 48 28.59375 48 C 30.15775 48 31 46.8765 31 45.3125 L 31 22.65625 C 31 22.38525 31.229 22.15625 31.5 22.15625 C 31.771 22.15625 32 22.38525 32 22.65625 L 32 32 C 32 33.104 32.897 34 34 34 C 35.103 34 36 33.104 36 32 L 36 19.5 C 36 16.467 33.533 14 30.5 14 L 20.5 14 z");
+      </script>
+    </div>
+
+    <div class="invisible me2">
+      <h2>2. Ilman tutkintoa Suomessa</h2>
+      <p>Jos parikymppiset (20-29 v) tiivistetään sataan henkeen, kuinka monella heistä ei ole perusasteen jälkeistä tutkintoa?</p>
+      <svg class = "me2" width="700" height="450"></svg>
+      <script type="text/javascript">
+        callEverything("me2", 17, "Sadan nuoren Suomessa on ", " ilman tutkintoa.", "Suomessa on noin 220 000 parikymppistä", "ilman tutkintoa, eli ", " sadan nuoren Suomessa.", "http://www.stat.fi/til/kou.html", 1, 30, 55,  40,"M 25.5 2 C 22.467 2 20 4.467 20 7.5 C 20 10.533 22.467 13 25.5 13 C 28.533 13 31 10.533 31 7.5 C 31 4.467 28.533 2 25.5 2 z M 20.5 14 C 17.467 14 15 16.467 15 19.5 L 15 32 C 15 33.104 15.897 34 17 34 C 18.103 34 19 33.104 19 32 L 19 22.46875 C 19 22.19775 19.229 21.96875 19.5 21.96875 C 19.771 21.96875 20 22.19775 20 22.46875 L 20 45.3125 C 20 46.8765 20.84125 48 22.40625 48 C 23.88825 48 25 46.8515 25 45.3125 L 25 32.46875 C 25 32.19275 25.224 31.96875 25.5 31.96875 C 25.776 31.96875 26 32.19275 26 32.46875 L 26 45.59375 C 26.004 45.59975 26.02725 45.58775 26.03125 45.59375 C 26.16825 46.97675 27.21175 48 28.59375 48 C 30.15775 48 31 46.8765 31 45.3125 L 31 22.65625 C 31 22.38525 31.229 22.15625 31.5 22.15625 C 31.771 22.15625 32 22.38525 32 22.65625 L 32 32 C 32 33.104 32.897 34 34 34 C 35.103 34 36 33.104 36 32 L 36 19.5 C 36 16.467 33.533 14 30.5 14 L 20.5 14 z");
+      </script>
+    </div>
+
+    <div class="invisible me3">
+      <h2>3. Työttömänä Suomessa</h2>
+      <p>Jos parikymppiset (20-29 v) tiivistetään sataan henkeen, kuinka moni heistä on työttömänä?</p>
+      <svg class = "me3" width="700" height="450"></svg>
+      <script type="text/javascript">
+        callEverything("me3", 11, "Sadan nuoren Suomessa on ", " työtöntä parikymppistä", "Suomessa on noin 60 000 työtöntä", "parikymppistä, eli ", " sadan nuoren Suomessa.", "http://www2.toimialaonline.fi", 1, 30, 55,  40,"M 25.5 2 C 22.467 2 20 4.467 20 7.5 C 20 10.533 22.467 13 25.5 13 C 28.533 13 31 10.533 31 7.5 C 31 4.467 28.533 2 25.5 2 z M 20.5 14 C 17.467 14 15 16.467 15 19.5 L 15 32 C 15 33.104 15.897 34 17 34 C 18.103 34 19 33.104 19 32 L 19 22.46875 C 19 22.19775 19.229 21.96875 19.5 21.96875 C 19.771 21.96875 20 22.19775 20 22.46875 L 20 45.3125 C 20 46.8765 20.84125 48 22.40625 48 C 23.88825 48 25 46.8515 25 45.3125 L 25 32.46875 C 25 32.19275 25.224 31.96875 25.5 31.96875 C 25.776 31.96875 26 32.19275 26 32.46875 L 26 45.59375 C 26.004 45.59975 26.02725 45.58775 26.03125 45.59375 C 26.16825 46.97675 27.21175 48 28.59375 48 C 30.15775 48 31 46.8765 31 45.3125 L 31 22.65625 C 31 22.38525 31.229 22.15625 31.5 22.15625 C 31.771 22.15625 32 22.38525 32 22.65625 L 32 32 C 32 33.104 32.897 34 34 34 C 35.103 34 36 33.104 36 32 L 36 19.5 C 36 16.467 33.533 14 30.5 14 L 20.5 14 z");
+      </script>
+    </div>
+
+
+    <div class="invisible me4">
+      <h2>4. Ystävät</h2>
+      <p>Jos parikymppiset (20-29 v) tiivistetään sataan henkeen, kuinka moni heistä tapaa ystävän kasvokkain vähintään kerran viikossa?</p>
+      <svg class = "me4" width="700" height="450"></svg>
+      <script type="text/javascript">
+        callEverything("me4", 88, "Ystäviään tapaa viikottain ", " nuorta sadasta.", "600 000 parikymppistä tapaa ystäviään", "viikoittain, eli ", " sadan nuoren Suomessa.", "https://tietoanuorista.fi/julkaisut/nuorten-vapaa-aikatutkimukset/", 1, 30, 55,  40,"M 25.5 2 C 22.467 2 20 4.467 20 7.5 C 20 10.533 22.467 13 25.5 13 C 28.533 13 31 10.533 31 7.5 C 31 4.467 28.533 2 25.5 2 z M 20.5 14 C 17.467 14 15 16.467 15 19.5 L 15 32 C 15 33.104 15.897 34 17 34 C 18.103 34 19 33.104 19 32 L 19 22.46875 C 19 22.19775 19.229 21.96875 19.5 21.96875 C 19.771 21.96875 20 22.19775 20 22.46875 L 20 45.3125 C 20 46.8765 20.84125 48 22.40625 48 C 23.88825 48 25 46.8515 25 45.3125 L 25 32.46875 C 25 32.19275 25.224 31.96875 25.5 31.96875 C 25.776 31.96875 26 32.19275 26 32.46875 L 26 45.59375 C 26.004 45.59975 26.02725 45.58775 26.03125 45.59375 C 26.16825 46.97675 27.21175 48 28.59375 48 C 30.15775 48 31 46.8765 31 45.3125 L 31 22.65625 C 31 22.38525 31.229 22.15625 31.5 22.15625 C 31.771 22.15625 32 22.38525 32 22.65625 L 32 32 C 32 33.104 32.897 34 34 34 C 35.103 34 36 33.104 36 32 L 36 19.5 C 36 16.467 33.533 14 30.5 14 L 20.5 14 z");
+      </script>
+    </div>
+
+    <div class="invisible me5">
+      <h2>5. Organisoitu harrastaminen</h2>
+      <p>Jos parikymppiset (20-29 v) tiivistetään sataan henkeen, kuinka moni heistä harrastaa seuraliikuntaa?</p>
+      <svg class = "me5" width="700" height="450"></svg>
+      <script type="text/javascript">
+        callEverything("me5", 19, "Seuraliikuntaa harrastaa ", " nuorta sadasta.", "Suomessa 130 000 parikymppistä harrastaa", "seuraliikuntaa, eli ", " sadan nuoren Suomessa.", "https://tietoanuorista.fi/julkaisut/nuorten-vapaa-aikatutkimukset/", 1, 30, 55,  40,"M 25.5 2 C 22.467 2 20 4.467 20 7.5 C 20 10.533 22.467 13 25.5 13 C 28.533 13 31 10.533 31 7.5 C 31 4.467 28.533 2 25.5 2 z M 20.5 14 C 17.467 14 15 16.467 15 19.5 L 15 32 C 15 33.104 15.897 34 17 34 C 18.103 34 19 33.104 19 32 L 19 22.46875 C 19 22.19775 19.229 21.96875 19.5 21.96875 C 19.771 21.96875 20 22.19775 20 22.46875 L 20 45.3125 C 20 46.8765 20.84125 48 22.40625 48 C 23.88825 48 25 46.8515 25 45.3125 L 25 32.46875 C 25 32.19275 25.224 31.96875 25.5 31.96875 C 25.776 31.96875 26 32.19275 26 32.46875 L 26 45.59375 C 26.004 45.59975 26.02725 45.58775 26.03125 45.59375 C 26.16825 46.97675 27.21175 48 28.59375 48 C 30.15775 48 31 46.8765 31 45.3125 L 31 22.65625 C 31 22.38525 31.229 22.15625 31.5 22.15625 C 31.771 22.15625 32 22.38525 32 22.65625 L 32 32 C 32 33.104 32.897 34 34 34 C 35.103 34 36 33.104 36 32 L 36 19.5 C 36 16.467 33.533 14 30.5 14 L 20.5 14 z");
+      </script>
+    </div>
+
+    <div class="invisible me6">
+      <h2>6. Mikä tahansa harrastaminen</h2>
+      <p>Jos parikymppiset (20-29 v) tiivistetään sataan henkeen, kuinka moni heistä harrastaa liikuntaa seurassa tai omatoimisesti?</p>
+      <svg class = "me6" width="700" height="450"></svg>
+      <script type="text/javascript">
+        callEverything("me6", 92, "Seuraliikuntaa harrastaa ", " nuorta sadasta.", "Suomessa 627 000 parikymppistä harrastaa", "liikuntaa, eli ", " sadan nuoren Suomessa.", "https://tietoanuorista.fi/julkaisut/nuorten-vapaa-aikatutkimukset/", 1, 30, 55,  40,"M 25.5 2 C 22.467 2 20 4.467 20 7.5 C 20 10.533 22.467 13 25.5 13 C 28.533 13 31 10.533 31 7.5 C 31 4.467 28.533 2 25.5 2 z M 20.5 14 C 17.467 14 15 16.467 15 19.5 L 15 32 C 15 33.104 15.897 34 17 34 C 18.103 34 19 33.104 19 32 L 19 22.46875 C 19 22.19775 19.229 21.96875 19.5 21.96875 C 19.771 21.96875 20 22.19775 20 22.46875 L 20 45.3125 C 20 46.8765 20.84125 48 22.40625 48 C 23.88825 48 25 46.8515 25 45.3125 L 25 32.46875 C 25 32.19275 25.224 31.96875 25.5 31.96875 C 25.776 31.96875 26 32.19275 26 32.46875 L 26 45.59375 C 26.004 45.59975 26.02725 45.58775 26.03125 45.59375 C 26.16825 46.97675 27.21175 48 28.59375 48 C 30.15775 48 31 46.8765 31 45.3125 L 31 22.65625 C 31 22.38525 31.229 22.15625 31.5 22.15625 C 31.771 22.15625 32 22.38525 32 22.65625 L 32 32 C 32 33.104 32.897 34 34 34 C 35.103 34 36 33.104 36 32 L 36 19.5 C 36 16.467 33.533 14 30.5 14 L 20.5 14 z");
+      </script>
+    </div>
+
+    <div class="invisible me7">
+      <h2>7. Ulkomailla syntyneet</h2>
+      <p>Jos parikymppiset (20-29 v) tiivistetään sataan henkeen, kuinka moni heistä on syntynyt ulkomailla?</p>
+      <svg class = "me7" width="700" height="450"></svg>
+      <script type="text/javascript">
+        callEverything("me7", 10, "Sadan nuoren Suomessa ", " on syntynyt ulkomailla.", "Suomessa on noin 67 000 ulkomailla", "syntynyttä, eli ", " sadan nuoren Suomessa.", "http://www.stat.fi/til/vaerak/index.html", 1, 30, 55,  40,"M 25.5 2 C 22.467 2 20 4.467 20 7.5 C 20 10.533 22.467 13 25.5 13 C 28.533 13 31 10.533 31 7.5 C 31 4.467 28.533 2 25.5 2 z M 20.5 14 C 17.467 14 15 16.467 15 19.5 L 15 32 C 15 33.104 15.897 34 17 34 C 18.103 34 19 33.104 19 32 L 19 22.46875 C 19 22.19775 19.229 21.96875 19.5 21.96875 C 19.771 21.96875 20 22.19775 20 22.46875 L 20 45.3125 C 20 46.8765 20.84125 48 22.40625 48 C 23.88825 48 25 46.8515 25 45.3125 L 25 32.46875 C 25 32.19275 25.224 31.96875 25.5 31.96875 C 25.776 31.96875 26 32.19275 26 32.46875 L 26 45.59375 C 26.004 45.59975 26.02725 45.58775 26.03125 45.59375 C 26.16825 46.97675 27.21175 48 28.59375 48 C 30.15775 48 31 46.8765 31 45.3125 L 31 22.65625 C 31 22.38525 31.229 22.15625 31.5 22.15625 C 31.771 22.15625 32 22.38525 32 22.65625 L 32 32 C 32 33.104 32.897 34 34 34 C 35.103 34 36 33.104 36 32 L 36 19.5 C 36 16.467 33.533 14 30.5 14 L 20.5 14 z");
+      </script>
+    </div>
+
+    <div class="invisible me8">
+      <h2>8. Naimisissa olevat</h2>
+      <p>Jos parikymppiset (20-29 v) tiivistetään sataan henkeen, kuinka moni heistä on naimisissa?</p>
+      <svg class = "me8" width="700" height="450"></svg>
+      <script type="text/javascript">
+        callEverything("me8", 12, "Sadan nuoren Suomessa on ", " naimisissa.", "Suomessa on noin 81 000 naimisissa olevaa", "parikymppistä, eli ", " sadan nuoren Suomessa.", "http://www.stat.fi/til/vaerak/index.html", 1, 30, 55,  40,"M 25.5 2 C 22.467 2 20 4.467 20 7.5 C 20 10.533 22.467 13 25.5 13 C 28.533 13 31 10.533 31 7.5 C 31 4.467 28.533 2 25.5 2 z M 20.5 14 C 17.467 14 15 16.467 15 19.5 L 15 32 C 15 33.104 15.897 34 17 34 C 18.103 34 19 33.104 19 32 L 19 22.46875 C 19 22.19775 19.229 21.96875 19.5 21.96875 C 19.771 21.96875 20 22.19775 20 22.46875 L 20 45.3125 C 20 46.8765 20.84125 48 22.40625 48 C 23.88825 48 25 46.8515 25 45.3125 L 25 32.46875 C 25 32.19275 25.224 31.96875 25.5 31.96875 C 25.776 31.96875 26 32.19275 26 32.46875 L 26 45.59375 C 26.004 45.59975 26.02725 45.58775 26.03125 45.59375 C 26.16825 46.97675 27.21175 48 28.59375 48 C 30.15775 48 31 46.8765 31 45.3125 L 31 22.65625 C 31 22.38525 31.229 22.15625 31.5 22.15625 C 31.771 22.15625 32 22.38525 32 22.65625 L 32 32 C 32 33.104 32.897 34 34 34 C 35.103 34 36 33.104 36 32 L 36 19.5 C 36 16.467 33.533 14 30.5 14 L 20.5 14 z");
+      </script>
+    </div>
+
+    <div class="invisible me9">
+      <h2>9. Kaupungit</h2>
+      <p>Jos parikymppiset (20-29 v) tiivistetään sataan henkeen, kuinka moni heistä asuu kaupungeissa?</p>
+      <svg class = "me9" width="700" height="450"></svg>
+      <script type="text/javascript">
+        callEverything("me9", 82, "Sadan nuoren Suomessa on ", " kaupungissa asuvaa.", "Suomessa on noin 556 000 kaupunkilaista", "parikymppistä, eli ", " sadan nuoren Suomessa.", "http://www.stat.fi/til/vaerak/index.html", 1, 30, 55,  40,"M 25.5 2 C 22.467 2 20 4.467 20 7.5 C 20 10.533 22.467 13 25.5 13 C 28.533 13 31 10.533 31 7.5 C 31 4.467 28.533 2 25.5 2 z M 20.5 14 C 17.467 14 15 16.467 15 19.5 L 15 32 C 15 33.104 15.897 34 17 34 C 18.103 34 19 33.104 19 32 L 19 22.46875 C 19 22.19775 19.229 21.96875 19.5 21.96875 C 19.771 21.96875 20 22.19775 20 22.46875 L 20 45.3125 C 20 46.8765 20.84125 48 22.40625 48 C 23.88825 48 25 46.8515 25 45.3125 L 25 32.46875 C 25 32.19275 25.224 31.96875 25.5 31.96875 C 25.776 31.96875 26 32.19275 26 32.46875 L 26 45.59375 C 26.004 45.59975 26.02725 45.58775 26.03125 45.59375 C 26.16825 46.97675 27.21175 48 28.59375 48 C 30.15775 48 31 46.8765 31 45.3125 L 31 22.65625 C 31 22.38525 31.229 22.15625 31.5 22.15625 C 31.771 22.15625 32 22.38525 32 22.65625 L 32 32 C 32 33.104 32.897 34 34 34 C 35.103 34 36 33.104 36 32 L 36 19.5 C 36 16.467 33.533 14 30.5 14 L 20.5 14 z");
+      </script>
+    </div>
+
+    <div class="invisible me10">
+      <h2>10. Kuusi suurinta kaupunkia</h2>
+      <p>Jos parikymppiset (20-29 v) tiivistetään sataan henkeen, kuinka moni heistä asuu joissain kuudesta suurimmasta kaupungista?</p>
+      <svg class = "me10" width="700" height="450"></svg>
+      <script type="text/javascript">
+        callEverything("me10", 42, "Sadan nuoren Suomessa on ", " kaupungissa asuvaa.", "Suomessa on noin 293 000 kaupunkilaista", "parikymppistä, eli ", " sadan nuoren Suomessa.", "http://www.stat.fi/til/vaerak/index.html", 1, 30, 55,  40,"M 25.5 2 C 22.467 2 20 4.467 20 7.5 C 20 10.533 22.467 13 25.5 13 C 28.533 13 31 10.533 31 7.5 C 31 4.467 28.533 2 25.5 2 z M 20.5 14 C 17.467 14 15 16.467 15 19.5 L 15 32 C 15 33.104 15.897 34 17 34 C 18.103 34 19 33.104 19 32 L 19 22.46875 C 19 22.19775 19.229 21.96875 19.5 21.96875 C 19.771 21.96875 20 22.19775 20 22.46875 L 20 45.3125 C 20 46.8765 20.84125 48 22.40625 48 C 23.88825 48 25 46.8515 25 45.3125 L 25 32.46875 C 25 32.19275 25.224 31.96875 25.5 31.96875 C 25.776 31.96875 26 32.19275 26 32.46875 L 26 45.59375 C 26.004 45.59975 26.02725 45.58775 26.03125 45.59375 C 26.16825 46.97675 27.21175 48 28.59375 48 C 30.15775 48 31 46.8765 31 45.3125 L 31 22.65625 C 31 22.38525 31.229 22.15625 31.5 22.15625 C 31.771 22.15625 32 22.38525 32 22.65625 L 32 32 C 32 33.104 32.897 34 34 34 C 35.103 34 36 33.104 36 32 L 36 19.5 C 36 16.467 33.533 14 30.5 14 L 20.5 14 z");
+      </script>
+    </div>
+
+    <div class="invisible me-sendMail">
+      <h1>Kiitos vastauksistasi!</h1>
+      <p>Jos olet osallistumassa Allianssin risteilylle, haluamme yhteystietosi arvontaa varten. Jätä tiedot lomakkeella.</p>
+¨      <div class="email">
+        <div>
+          <label for="emailAddress">Sähköpostiosoite:</label>
+          <input id="emailAddress" type="email">
+        </div>
+        <div>
+          <input type="radio" id="edustan1" name="edustan" value="edustan1">
+          <label for="edustan1">Edustan nuorisojärjestöjä</label>
+          <input type="radio" id="edustan2" name="edustan" value="edustan2">
+          <label for="edustan2">Edustan muuta</label>
+        </div>
+        <button id="submitPoints" onClick="pushDataToBase()">Lähetä</button>
+      </div>
+    </div>
+
+    <div class="invisible me-vastaus">
+      <p>Kiitos lähetyksestä!</p>
+    </div>
+
+    <div class="invisible me-share" style="margin-top: 20px">
+    <button class="share" onclick="shareThis()"><div class="unselectable">Jaa Facebookissa</div></button>
+    </div>
+    <div class="invisible me-yhteistyo">
+        <h2>Yhteistyössä:</h2>
+        <a href="http://alli.fi/" target="_blank"><img class="images" src="img/allianssi-logo.png" /></a>
+        <a href="http://www.mesaatio.fi/" target="_blank"><img class="images" src="img/me-logo.png" /></a>
+    </div>
+  </figure>
+</body>
