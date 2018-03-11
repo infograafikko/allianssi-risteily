@@ -13,10 +13,10 @@
 
   // Initialize Firebase
   var config = {
-    apiKey: "AIzaSyD0WD9SdNfBUYK9zbmOtW1wdFHW0e0W3Lc",
-    authDomain: "how-many-a9c8a.firebaseapp.com",
-    databaseURL: "https://how-many-a9c8a.firebaseio.com",
-    storageBucket: "how-many-a9c8a.appspot.com",
+    apiKey: "AIzaSyA3tM2C7zDae_kSubqF9WuRFjGN36LrfGw",
+    authDomain: "how-many-a37b0.firebaseapp.com",
+    databaseURL: "https://how-many-a37b0.firebaseio.com/",
+    storageBucket: "how-many-a37b0.appspot.com",
     messagingSenderId: "996659641777"
   };
   firebase.initializeApp(config);
