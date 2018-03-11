@@ -1,5 +1,5 @@
 	//Save variable information for FB Share
-	var urlHost = "https://infograafikko.github.io/me-saatio-sadan-nuoren-suomi/";
+	var urlHost = "https://infograafikko.github.io/allianssi-risteily/";
 	var desc;
 	var pic;
 	var status;
@@ -9,7 +9,7 @@
 	var answerList = [];
 
 	//List of all questions
-	var questionList = ["me2", "me3", "me4", "me5", "me6", "me7", "me8", "me9", "me10"]
+	var questionList = ["allime2", "allime3", "allime4", "allime5", "allime6", "allime7", "allime8", "allime9", "allime10"]
 
   // Initialize Firebase
   var config = {
@@ -107,10 +107,10 @@ function callEverything(qID, right, yAnswer1, yAnswer2, rAnswer1, rAnswer2, rAns
 	    .attr("x", x)
 	    .attr("text-anchor", "middle")
 	    .text(function(d) { return d; })
-	    .attr("font-family", "Merriweather Sans");
+	    .attr("font-family", "Roboto");
 
-	var numberTextGuess = svg.append("text");
-	var numberTextRight = svg.append("text");
+	var numberTextGuess = svg.append("text").attr("class", "numberTextGuess");
+	var numberTextRight = svg.append("text").attr("class", "numberTextRight");;
 
 
 	var handle = slider.insert("circle", ".track-overlay")
@@ -215,7 +215,7 @@ slider.transition() // Gratuitous intro!
 		.attr("x", width/2 - 15)
 		.attr("y", height*0.47)
 		.text("Katso oikea vastaus")
-		.attr("font-family", "Merriweather Sans")
+		.attr("font-family", "Roboto")
 		.attr("fill", "#fff")
 
 
@@ -256,7 +256,7 @@ slider.transition() // Gratuitous intro!
 			.attr("x", j + leftMargin)
 			.attr("y",height*0.12)
 			.attr("text-anchor", "middle")
-			.attr("font-family", "Merriweather Sans")
+			.attr("font-family", "Roboto")
 			.attr("font-size", "25px")
 			.text(guessData);
 	}
@@ -392,7 +392,7 @@ slider.transition() // Gratuitous intro!
 			.attr("x", rightPos)
 			.attr("y",height*0.12)
 			.attr("text-anchor", "middle")
-			.attr("font-family", "Merriweather Sans")
+			.attr("font-family", "Roboto")
 			.attr("font-size", "25px")
 			.text(right);
 
@@ -472,35 +472,35 @@ slider.transition() // Gratuitous intro!
 		//Vastauksesi
 
 		svg.append("text")
-			.attr("class", "iAmLegend")
+			.attr("class", "iAmLegendGuess")
 			.attr("x", width* 0.13)
 			.attr("y", height * 1.25)
 			.text("Vastauksesi")
-			.attr("font-family", "Merriweather Sans")
+			.attr("font-family", "Roboto")
 
 		//Append yAnswer1
 		svg.append("text")
-			.attr("class", "explain-text")
+			.attr("class", "explain-textGuess")
 			.attr("x", width* 0.13)
 			.attr("y", height * 1.35)
 			.text(yAnswer1)
-			.attr("font-family", "Merriweather Sans")
+			.attr("font-family", "Roboto")
 			.attr("font-weight", "lighter")
 			.attr("font-size", "15px")
 
 
 		//Append your guess and yAnswer2
 		svg.append("text")
-			.attr("class", "explain-text")
+			.attr("class", "explain-textGuess")
 			.attr("x", width* 0.13)
 			.attr("y", height * 1.42)
 			.text(guessData + yAnswer2)
-			.attr("font-family", "Merriweather Sans")
+			.attr("font-family", "Roboto")
 			.attr("font-weight", "lighter")
 			.attr("font-size", "15px")
 
 		svg.append("circle")
-			.attr("class", "explain-text")
+			.attr("class", "explain-textGuess")
 			.attr("cx", width * 0.1)
 			.attr("cy", height * 1.23)
 			.attr("r", 9)
@@ -510,32 +510,32 @@ slider.transition() // Gratuitous intro!
 		//Oikea vastaus
 
 		svg.append("text")
-			.attr("class", "iAmLegend")
+			.attr("class", "iAmLegendRight")
 			.attr("x", width*0.6)
 			.attr("y", height * 1.25)
 			.text("Oikea vastaus")
-			.attr("font-family", "Merriweather Sans")
+			.attr("font-family", "Roboto")
 
 		svg.append("text")
-			.attr("class", "explain-text")
+			.attr("class", "explain-textRight")
 			.attr("x",width*0.6)
 			.attr("y", height * 1.35)
 			.text(rAnswer1)
-			.attr("font-family", "Merriweather Sans")
+			.attr("font-family", "Roboto")
 			.attr("font-weight", "lighter")
 			.attr("font-size", "15px")
 
 		svg.append("text")
-			.attr("class", "explain-text")
+			.attr("class", "explain-textRight")
 			.attr("x",width*0.6)
 			.attr("y", height * 1.42)
 			.text(rAnswer2 + right + rAnswer3)
-			.attr("font-family", "Merriweather Sans")
+			.attr("font-family", "Roboto")
 			.attr("font-weight", "lighter")
 			.attr("font-size", "15px")
 
 		svg.append("circle")
-			.attr("class", "explain-text")
+			.attr("class", "explain-textRight")
 			.attr("cx", width*0.57)
 			.attr("cy", height * 1.23)
 			.attr("r", 9)
@@ -548,7 +548,7 @@ slider.transition() // Gratuitous intro!
 			.attr("x", width*0.89)
 			.attr("y", height*0.45)
 			.text("Muiden lukijoiden vastaukset")
-			.attr("font-family", "Merriweather Sans")
+			.attr("font-family", "Roboto")
 			.attr("font-size", "10px")
 			.attr("fill", "gray")
 
@@ -562,7 +562,7 @@ slider.transition() // Gratuitous intro!
 			.attr("x", width*0.13)
 			.attr("y", height* 1.53)
 			.text("Lähde")
-			.attr("font-family", "Merriweather Sans")
+			.attr("font-family", "Roboto")
 			.attr("font-size", "15px")
 			.attr("fill", "#1C438C")
 
@@ -597,6 +597,48 @@ slider.transition() // Gratuitous intro!
 			sum = Math.round(sum);
 			console.log(pointsDif);
 
+			//Change content for h2 right%
+			document.getElementsByClassName("vastauksesi")[0].innerHTML = "Loistavaa! Tiesit " + sum + " % nuorten asioista."
+			document.getElementsByClassName("vastauksesi")[1].innerHTML = "Erinomaista. Tiesit " + sum + " % nuorten asioista."
+			document.getElementsByClassName("vastauksesi")[2].innerHTML = "Ei ihan nappiin. Tiesit testin mukaan " + sum + " % nuorten asioista."
+			document.getElementsByClassName("vastauksesi")[3].innerHTML = "Äh! Tiesit testin mukaan " + sum + " % nuorten asioista."
+			
+
+			//Show character depencing of result
+			if (sum >= 90) {
+				var elements = document.getElementsByClassName("me-tietaja");
+				elements[0].classList.remove("invisible");
+
+				status = "Minä olen tähti";
+				desc = "Tiesin " + sum + " % nuorten asioista. Me-säätiön 'Sadan nuoren Suomi' -pelissä sinäkin voit testata, miten hyvin tunnet Suomen nuoret.";
+				pic = "img/tietaja.jpg";
+
+			} else if (sum < 90 & sum >=75) {
+				var elements = document.getElementsByClassName("me-keskiverto");
+				elements[0].classList.remove("invisible");
+
+				status = "Olen kartalla";
+				desc = "Tiesin " + sum + " % nuorten asioista. Me-säätiön 'Sadan nuoren Suomi' -pelissä sinäkin voit testata, miten hyvin tunnet Suomen nuoret.";
+				pic = "img/kartta.jpg";
+
+			} else if (sum < 75 & sum >=50) {
+				var elements = document.getElementsByClassName("me-alle");
+				elements[0].classList.remove("invisible");
+
+				status = "Meni metsään";
+				desc = "Tiesin " + sum + " % nuorten asioista. Me-säätiön 'Sadan nuoren Suomi' -pelissä sinäkin voit testata, miten hyvin tunnet Suomen nuoret.";
+				pic = "img/metsa.jpg";
+
+			}  else {
+				var elements = document.getElementsByClassName("me-kupla");
+				elements[0].classList.remove("invisible")
+
+				status = "Elän kuplassa";
+				desc = "Tiesin " + sum + " % nuorten asioista. Me-säätiön 'Sadan nuoren Suomi' -pelissä sinäkin voit testata, miten hyvin tunnet Suomen nuoret.";
+				pic = "img/kupla.jpg";
+
+			}
+
 			//Show sendMail
 			var elements = document.getElementsByClassName("me-sendMail");
 			elements[0].classList.remove("invisible");
@@ -614,7 +656,7 @@ slider.transition() // Gratuitous intro!
 }
 
 function pushDataToBase() {
-	var checkedRadio = document.querySelector('input[name="edustan"]:checked').value;
+	var checkedRadio = document.querySelector('input[name="osallistuminen"]:checked').value;
 	var emailAddress = document.getElementById("emailAddress").value;
 
 	//Show kiitos
