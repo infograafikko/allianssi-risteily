@@ -24,15 +24,15 @@
     var firebaseRef = firebase.database().ref();
 
   //Facebook share script
-	window.fbAsyncInit = function() {
-		FB.init({
-		appId            : '103403023614377',
-		autoLogAppEvents : true,
-		xfbml            : true,
-		version          : 'v2.9'
-		});
-		FB.AppEvents.logPageView();
-	};
+	//window.fbAsyncInit = function() {
+	//	FB.init({
+	//	appId            : '995003690647677',
+	//	autoLogAppEvents : true,
+	//	xfbml            : true,
+	//	version          : 'v2.9'
+	//	});
+	//	FB.AppEvents.logPageView();
+	//};
 
 	(function(d, s, id){
 		var js, fjs = d.getElementsByTagName(s)[0];
@@ -644,8 +644,8 @@ slider.transition() // Gratuitous intro!
 			elements[0].classList.remove("invisible");
 
 			//Show share button
-			elements = document.getElementsByClassName("me-share");
-			elements[0].classList.remove("invisible");
+			//elements = document.getElementsByClassName("me-share");
+			//elements[0].classList.remove("invisible");
 
 			//Show yhteistyo
 			elements = document.getElementsByClassName("me-yhteistyo");
