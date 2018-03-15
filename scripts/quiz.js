@@ -212,9 +212,9 @@ slider.transition() // Gratuitous intro!
 	var buttonText = buttonGroup.append("text")
 		.attr("class", "buttonText")
 		.attr("pointer-events", "none")
-		.attr("x", width/2 - 15)
+		.attr("x", width/2 + 20)
 		.attr("y", height*0.47)
-		.text("Katso oikea vastaus")
+		.text("Vastaa")
 		.attr("font-family", "Roboto")
 		.attr("fill", "#fff")
 
