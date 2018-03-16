@@ -663,6 +663,9 @@ function pushDataToBase() {
 	var elements = document.getElementsByClassName("me-vastaus");
 	elements[0].classList.remove("invisible");
 
+	var buttonElement = document.getElementById("submitPoints");
+	buttonElement.style.opacity = 0;
+
 	date = Date.now()
 
 
